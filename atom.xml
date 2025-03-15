@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Guagua111-OIer.github.io/blog</id>
     <title>Gridea</title>
-    <updated>2025-03-10T12:44:48.340Z</updated>
+    <updated>2025-03-15T04:03:03.820Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Guagua111-OIer.github.io/blog"/>
     <link rel="self" href="https://Guagua111-OIer.github.io/blog/atom.xml"/>
@@ -11,35 +11,138 @@
     <icon>https://Guagua111-OIer.github.io/blog/favicon.ico</icon>
     <rights>All rights reserved 2025, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://Guagua111-OIer.github.io/blog/post/hello-gridea/</id>
-        <link href="https://Guagua111-OIer.github.io/blog/post/hello-gridea/">
+        <title type="html"><![CDATA[P10710 [NOISG2024 Prelim] School Photo]]></title>
+        <id>https://Guagua111-OIer.github.io/blog/post/p10710-noisg2024-prelim-school-photo/</id>
+        <link href="https://Guagua111-OIer.github.io/blog/post/p10710-noisg2024-prelim-school-photo/">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <updated>2025-03-15T03:59:28.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="思路">思路</h2>
+<p>这道题我们使用双指针来解。</p>
+<p>我们将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> 数组拍平成一维数组，然后排序。利用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> 数组的有序性，维护两个指针 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mo separator="true">,</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">l, r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span> 表示左边界与右边界。</p>
+<p>接下来，我们会遇到两种情况：第一种，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[l, r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> 这个区间里没有包含所有的班级。这时我们将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span> 自增。第二种，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[l, r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> 包含了所有的班级。这时更新答案 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>n</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">ans</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">s</span></span></span></span>，并令 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi></mrow><annotation encoding="application/x-tex">l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span> 自增以进一步寻找最优解。</p>
+<p>问题是，如何 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 判断区间里是否包含所有的班级呢？</p>
+<p>我们可以使用一个桶 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span> 来维护区间里每个教室的同学数量，并使用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>u</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">sum</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span></span></span></span> 记录区间里不同教室的数量。这时我们写出以下代码：</p>
+<pre><code class="language-cpp">if (sum &lt; n) { //如果没有包含所有教室
+	r++; //右指针右移（新增一个同学）
+	if (t[a[r].c] == 0) sum++; //如果这个同学来自一个新的教室，sum++
+	t[a[r].c]++; //他所在教师的人数 ++
+} else { //如果包含了全部教室
+	ans = min(ans, a[r].h - a[l].h); //更新答案
+	t[a[l].c]--; //由于将要失去左边界的同学，所以教室人数 --
+	if (t[a[l].c] == 0) sum--; //这个教室没有学生了，意味着失去了一个教室，sum--
+	l++; //左边界右移
+}
+</code></pre>
+<p>最后输出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>n</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">ans</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">s</span></span></span></span> 即可。</p>
+<h2 id="代码">代码</h2>
+<pre><code class="language-cpp">
+#include &lt;algorithm&gt; //sort
+#include &lt;iostream&gt; //cin, cout
+using namespace std;
+int n, s, len, sum, t[1000005], ans = 0x7fffffff;
+
+struct Node {
+	int c, h; //c 表示教室，h 表示身高
+	Node (int c = 0, int h = 0) : c(c), h(h) //构造函数
+} a[1000005];
+
+bool cmp(Node x, Node y) { //比较函数
+	return x.h &lt; y.h;
+}
+
+int main() {
+	cin &gt;&gt; n &gt;&gt; s;
+	for (int i = 1; i &lt;= n; i++) {
+		for (int j = 1; j &lt;= s; j++) {
+			int h;
+			cin &gt;&gt; h;
+			a[++len] = Node(i, h); //输入
+		}
+	}
+	sort(a + 1, a + len + 1, cmp); //排序
+	int l = 1, r = 0; //定义左边界与右边界
+	while (l &lt;= len &amp;&amp; r &lt;= len) {
+		if (sum &lt; n) {
+			r++;
+			if (t[a[r].c] == 0) sum++;
+			t[a[r].c]++;
+		} else {
+			ans = min(ans, a[r].h - a[l].h);
+			t[a[l].c]--;
+			if (t[a[l].c] == 0) sum--;
+			l++;
+		}
+	}
+	cout &lt;&lt; ans; //输出答案
+	return 0;
+}
+
+</code></pre>
+<p>如果这篇题解能够通过，那么就是我的第一篇题解了。希望大家多多指教，也希望管理员认真审核！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Quine —— 能够自我繁殖的程序生命]]></title>
+        <id>https://Guagua111-OIer.github.io/blog/post/Quine/</id>
+        <link href="https://Guagua111-OIer.github.io/blog/post/Quine/">
+        </link>
+        <updated>2025-03-15T03:54:22.000Z</updated>
+        <summary type="html"><![CDATA[<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="red"><mstyle mathsize="0.8em"><mtext mathvariant="monospace">警告：切勿将本文章任何内容用于任何非法用途。</mtext></mstyle><mspace linebreak="newline"></mspace><mstyle mathcolor="red"><mstyle mathsize="0.8em"><mtext mathvariant="monospace">包含但不限于制作病毒，抄袭。</mtext></mstyle></mstyle></mstyle></mrow><annotation encoding="application/x-tex">\color{red}\texttt{\footnotesize{警告：切勿将本文章任何内容用于任何非法用途。}}
+\\
+\color{red}\texttt{\footnotesize{包含但不限于制作病毒，抄袭。}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.48888800000000004em;vertical-align:0em;"></span><span class="mord text" style="color:red;"><span class="mord sizing reset-size6 size4" style="color:red;"><span class="mord texttt cjk_fallback" style="color:red;">警</span><span class="mord texttt cjk_fallback" style="color:red;">告</span><span class="mord texttt cjk_fallback" style="color:red;">：</span><span class="mord texttt cjk_fallback" style="color:red;">切</span><span class="mord texttt cjk_fallback" style="color:red;">勿</span><span class="mord texttt cjk_fallback" style="color:red;">将</span><span class="mord texttt cjk_fallback" style="color:red;">本</span><span class="mord texttt cjk_fallback" style="color:red;">文</span><span class="mord texttt cjk_fallback" style="color:red;">章</span><span class="mord texttt cjk_fallback" style="color:red;">任</span><span class="mord texttt cjk_fallback" style="color:red;">何</span><span class="mord texttt cjk_fallback" style="color:red;">内</span><span class="mord texttt cjk_fallback" style="color:red;">容</span><span class="mord texttt cjk_fallback" style="color:red;">用</span><span class="mord texttt cjk_fallback" style="color:red;">于</span><span class="mord texttt cjk_fallback" style="color:red;">任</span><span class="mord texttt cjk_fallback" style="color:red;">何</span><span class="mord texttt cjk_fallback" style="color:red;">非</span><span class="mord texttt cjk_fallback" style="color:red;">法</span><span class="mord texttt cjk_fallback" style="color:red;">用</span><span class="mord texttt cjk_fallback" style="color:red;">途</span><span class="mord texttt cjk_fallback" style="color:red;">。</span></span></span></span><span class="mspace newline" style="color:red;"></span><span class="base"><span class="strut" style="height:0.48888800000000004em;vertical-align:0em;"></span><span class="mord text" style="color:red;"><span class="mord sizing reset-size6 size4" style="color:red;"><span class="mord texttt cjk_fallback" style="color:red;">包</span><span class="mord texttt cjk_fallback" style="color:red;">含</span><span class="mord texttt cjk_fallback" style="color:red;">但</span><span class="mord texttt cjk_fallback" style="color:red;">不</span><span class="mord texttt cjk_fallback" style="color:red;">限</span><span class="mord texttt cjk_fallback" style="color:red;">于</span><span class="mord texttt cjk_fallback" style="color:red;">制</span><span class="mord texttt cjk_fallback" style="color:red;">作</span><span class="mord texttt cjk_fallback" style="color:red;">病</span><span class="mord texttt cjk_fallback" style="color:red;">毒</span><span class="mord texttt cjk_fallback" style="color:red;">，</span><span class="mord texttt cjk_fallback" style="color:red;">抄</span><span class="mord texttt cjk_fallback" style="color:red;">袭</span><span class="mord texttt cjk_fallback" style="color:red;">。</span></span></span></span></span></span></p>
+<p>声明：本文原创，禁止抄袭。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="red"><mstyle mathsize="0.8em"><mtext mathvariant="monospace">警告：切勿将本文章任何内容用于任何非法用途。</mtext></mstyle><mspace linebreak="newline"></mspace><mstyle mathcolor="red"><mstyle mathsize="0.8em"><mtext mathvariant="monospace">包含但不限于制作病毒，抄袭。</mtext></mstyle></mstyle></mstyle></mrow><annotation encoding="application/x-tex">\color{red}\texttt{\footnotesize{警告：切勿将本文章任何内容用于任何非法用途。}}
+\\
+\color{red}\texttt{\footnotesize{包含但不限于制作病毒，抄袭。}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.48888800000000004em;vertical-align:0em;"></span><span class="mord text" style="color:red;"><span class="mord sizing reset-size6 size4" style="color:red;"><span class="mord texttt cjk_fallback" style="color:red;">警</span><span class="mord texttt cjk_fallback" style="color:red;">告</span><span class="mord texttt cjk_fallback" style="color:red;">：</span><span class="mord texttt cjk_fallback" style="color:red;">切</span><span class="mord texttt cjk_fallback" style="color:red;">勿</span><span class="mord texttt cjk_fallback" style="color:red;">将</span><span class="mord texttt cjk_fallback" style="color:red;">本</span><span class="mord texttt cjk_fallback" style="color:red;">文</span><span class="mord texttt cjk_fallback" style="color:red;">章</span><span class="mord texttt cjk_fallback" style="color:red;">任</span><span class="mord texttt cjk_fallback" style="color:red;">何</span><span class="mord texttt cjk_fallback" style="color:red;">内</span><span class="mord texttt cjk_fallback" style="color:red;">容</span><span class="mord texttt cjk_fallback" style="color:red;">用</span><span class="mord texttt cjk_fallback" style="color:red;">于</span><span class="mord texttt cjk_fallback" style="color:red;">任</span><span class="mord texttt cjk_fallback" style="color:red;">何</span><span class="mord texttt cjk_fallback" style="color:red;">非</span><span class="mord texttt cjk_fallback" style="color:red;">法</span><span class="mord texttt cjk_fallback" style="color:red;">用</span><span class="mord texttt cjk_fallback" style="color:red;">途</span><span class="mord texttt cjk_fallback" style="color:red;">。</span></span></span></span><span class="mspace newline" style="color:red;"></span><span class="base"><span class="strut" style="height:0.48888800000000004em;vertical-align:0em;"></span><span class="mord text" style="color:red;"><span class="mord sizing reset-size6 size4" style="color:red;"><span class="mord texttt cjk_fallback" style="color:red;">包</span><span class="mord texttt cjk_fallback" style="color:red;">含</span><span class="mord texttt cjk_fallback" style="color:red;">但</span><span class="mord texttt cjk_fallback" style="color:red;">不</span><span class="mord texttt cjk_fallback" style="color:red;">限</span><span class="mord texttt cjk_fallback" style="color:red;">于</span><span class="mord texttt cjk_fallback" style="color:red;">制</span><span class="mord texttt cjk_fallback" style="color:red;">作</span><span class="mord texttt cjk_fallback" style="color:red;">病</span><span class="mord texttt cjk_fallback" style="color:red;">毒</span><span class="mord texttt cjk_fallback" style="color:red;">，</span><span class="mord texttt cjk_fallback" style="color:red;">抄</span><span class="mord texttt cjk_fallback" style="color:red;">袭</span><span class="mord texttt cjk_fallback" style="color:red;">。</span></span></span></span></span></span></p>
+<p>声明：本文原创，禁止抄袭。</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<p>你是否有过一个念头：“我要写一个能输出自己的程序！”<br>
+目的呢，可能是想要挑战、娱乐、炫耀。<br>
+但是，经过七七四十九般尝试，你依然没有研究出来这种程序。<br>
+不过，看完这篇文章，你就会 Get 到以前让你不敢相信的代码！<br>
+那就让我们尝试写一写吧！</p>
+<p>提示：我是 <code>C++</code> 党，所以本文的所有代码都是用 <code>C++</code> 编写的。不过，尽管你不会 <code>C++</code>，只要读懂了思路，稍加变通，我相信你也一定能成功！</p>
+<h1 id="part-1-一次大胆的尝试">Part 1 一次大胆的尝试</h1>
+<p>首先，凡是代码都有框架：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="0.5em"><mtext mathvariant="monospace">注：这里省略了主函数以外的部分与主函数</mtext></mstyle></mrow><annotation encoding="application/x-tex">\texttt{\tiny{注：这里省略了主函数以外的部分与主函数}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.305555em;vertical-align:0em;"></span><span class="mord text"><span class="mord sizing reset-size6 size1"><span class="mord texttt cjk_fallback">注</span><span class="mord texttt cjk_fallback">：</span><span class="mord texttt cjk_fallback">这</span><span class="mord texttt cjk_fallback">里</span><span class="mord texttt cjk_fallback">省</span><span class="mord texttt cjk_fallback">略</span><span class="mord texttt cjk_fallback">了</span><span class="mord texttt cjk_fallback">主</span><span class="mord texttt cjk_fallback">函</span><span class="mord texttt cjk_fallback">数</span><span class="mord texttt cjk_fallback">以</span><span class="mord texttt cjk_fallback">外</span><span class="mord texttt cjk_fallback">的</span><span class="mord texttt cjk_fallback">部</span><span class="mord texttt cjk_fallback">分</span><span class="mord texttt cjk_fallback">与</span><span class="mord texttt cjk_fallback">主</span><span class="mord texttt cjk_fallback">函</span><span class="mord texttt cjk_fallback">数</span></span></span></span></span></span></p>
+<pre><code class="language-cpp">cout &lt;&lt; &quot;...&quot;;
+</code></pre>
+<p>然后，我们要将代码里的 <code>...</code> 替换成整个代码，注意特殊字符的转义：</p>
+<pre><code class="language-cpp">cout &lt;&lt; &quot;cout &lt;&lt; \&quot;...\&quot;&quot;;
+</code></pre>
+<p>emmm，又出现了一个 <code>...</code>，按照规矩，我们应该把它也替换成整个代码。</p>
+<pre><code class="language-cpp">cout &lt;&lt; &quot;cout &lt;&lt; \&quot;cout &lt;&lt; \&quot;cout &lt;&lt; \&quot;...\&quot;\&quot;;\&quot;&quot;;
+</code></pre>
+<p>emmm，还有一个 <code>...</code>，所以继续替换……<br>
+等等，你有没有发现什么不对劲的地方？</p>
+<h2 id="part-2-无法打破的-造物论">Part 2 无法打破的 “造物论”</h2>
+<p>看着上方越来越长的代码，你不禁陷入深思。<br>
+照这么写，我的代码要写 INF 列啊！！！QWQ <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="0.5em"><mtext mathvariant="monospace">注:INF是无穷大的意思。</mtext></mstyle></mrow><annotation encoding="application/x-tex">\texttt{\tiny{注:INF是无穷大的意思。}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.305555em;vertical-align:0em;"></span><span class="mord text"><span class="mord sizing reset-size6 size1"><span class="mord texttt cjk_fallback">注</span><span class="mord texttt">:</span><span class="mord texttt">I</span><span class="mord texttt">N</span><span class="mord texttt">F</span><span class="mord texttt cjk_fallback">是</span><span class="mord texttt cjk_fallback">无</span><span class="mord texttt cjk_fallback">穷</span><span class="mord texttt cjk_fallback">大</span><span class="mord texttt cjk_fallback">的</span><span class="mord texttt cjk_fallback">意</span><span class="mord texttt cjk_fallback">思</span><span class="mord texttt cjk_fallback">。</span></span></span></span></span></span><br>
+我们貌似发现了一个无法打破的理论，我们暂且称之为 “造物论”。该理论指出，任何一种物质，都只能由比其跟高级的物质造出。例如，汽车厂造出汽车，人类造出玩具。（我们的程序也可以由 <code>Windows</code> 强大的文件读写特性直接输出代码文件自己，但是过程中利用了 <code>Windows</code> 这种比代码复杂 10000 倍的东西，并没有违背定理。）</p>
+<p>所以貌似 “造物论” 开始阻拦我们的实现了。</p>
+<!-- more -->
+<p>但是，“造物论” 真的就无法打破吗？<br>
+答案是否定的。</p>
+<h2 id="part-3-自我繁殖的奥秘">Part 3 自我繁殖的奥秘</h2>
+<p>微生物的繁殖，人类繁衍后代，植物授粉，无一不在做 “造物论” 的反例！大自然，就是我们成功的一丝希望！</p>
+<p>举个例子，乌龟的繁殖。<s>（真实画面请自行脑补，以下仅作参考）</s></p>
+<figure data-type="image" tabindex="1"><img src="bilibili:BV1jWFTe6EiT" alt="" loading="lazy"></figure>
+<p>程序，也可以用类似的方法进行繁殖。</p>
+<pre><code class="language-cpp">#include&lt;cstdio&gt;
+char s[]=&quot;#include&lt;cstdio&gt;%cchar s[]=%c%s%c;%cint main(){printf(s,10,34,s,34);}&quot;;
+int main(){printf(s,10,34,s,34,10);}
+</code></pre>
+<p>我们可以先输出代码其他部分，将会重复的那一行单独存下来，通过 <code>printf()</code> 的特性将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span> 的重复部分用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span> 替代。</p>
+<p><code>%c</code> 是指代特殊字符。因为特殊字符转义是包含两个字符，所以为了方便，我们用 <code>%c</code> 表示特殊字符。</p>
+<p><code>%s</code> 是字符串重复的位置，我们通过 <code>printf()</code> 将重复的部分替换。</p>
+<p>以上代码看上去码风很丑，不过这是为了使最后代码简洁。因为一旦加长代码，就会使 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span> 的长度增加。</p>
+<p>通过这种 “先将重复部分存下来不管，输出其他部分，最后在其他语句中将重复部分替换” 的思路，我们可以衍生出很多很多代码。比如这个：</p>
+<pre><code>把括号里的内容抄一遍，再带括号抄一遍，最后加个句号（把括号里的内容抄一遍，再带括号抄一遍，最后加个句号）。
+</code></pre>
+<p><s>自然语言</s></p>
+<p>大家可以发现，按照这段话做一遍后，你会得到一个一模一样的段落！</p>
+<p>还有很多 Quine 程序的实现。大家可以查阅资料。能输出自己的程序，就这样被我们创造出来了！是不是不敢相信？到此，我们大功告成！</p>
+<h1 id="end"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mi>n</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">End</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span></span></span></span></h1>
 ]]></content>
     </entry>
 </feed>
