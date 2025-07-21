@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://Guagua111-OIer.github.io/</id>
+    <id>https://Guagua111-OIer.github.io/blog</id>
     <title>Guagua111 的笔记</title>
-    <updated>2025-07-21T10:47:35.036Z</updated>
+    <updated>2025-07-21T10:48:18.318Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://Guagua111-OIer.github.io/"/>
-    <link rel="self" href="https://Guagua111-OIer.github.io/atom.xml"/>
+    <link rel="alternate" href="https://Guagua111-OIer.github.io/blog"/>
+    <link rel="self" href="https://Guagua111-OIer.github.io/blog/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://Guagua111-OIer.github.io/images/avatar.png</logo>
-    <icon>https://Guagua111-OIer.github.io/favicon.ico</icon>
+    <logo>https://Guagua111-OIer.github.io/blog/images/avatar.png</logo>
+    <icon>https://Guagua111-OIer.github.io/blog/favicon.ico</icon>
     <rights>All rights reserved 2025, Guagua111 的笔记</rights>
     <entry>
         <title type="html"><![CDATA[Markdown]]></title>
-        <id>https://Guagua111-OIer.github.io/post/markdown/</id>
-        <link href="https://Guagua111-OIer.github.io/post/markdown/">
+        <id>https://Guagua111-OIer.github.io/blog/post/markdown/</id>
+        <link href="https://Guagua111-OIer.github.io/blog/post/markdown/">
         </link>
         <updated>2025-03-29T00:46:34.000Z</updated>
         <content type="html"><![CDATA[<div class="alert alert-note">
@@ -31,8 +31,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[P10710 [NOISG2024 Prelim] School Photo]]></title>
-        <id>https://Guagua111-OIer.github.io/post/p10710-noisg2024-prelim-school-photo/</id>
-        <link href="https://Guagua111-OIer.github.io/post/p10710-noisg2024-prelim-school-photo/">
+        <id>https://Guagua111-OIer.github.io/blog/post/p10710-noisg2024-prelim-school-photo/</id>
+        <link href="https://Guagua111-OIer.github.io/blog/post/p10710-noisg2024-prelim-school-photo/">
         </link>
         <updated>2025-03-15T03:59:28.000Z</updated>
         <content type="html"><![CDATA[<h2 id="思路">思路</h2>
@@ -102,8 +102,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[Quine —— 能够自我繁殖的程序生命]]></title>
-        <id>https://Guagua111-OIer.github.io/post/Quine/</id>
-        <link href="https://Guagua111-OIer.github.io/post/Quine/">
+        <id>https://Guagua111-OIer.github.io/blog/post/Quine/</id>
+        <link href="https://Guagua111-OIer.github.io/blog/post/Quine/">
         </link>
         <updated>2025-03-15T03:54:22.000Z</updated>
         <summary type="html"><![CDATA[<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="red"><mstyle mathsize="0.8em"><mtext mathvariant="monospace">警告：切勿将本文章任何内容用于任何非法用途。</mtext></mstyle><mspace linebreak="newline"></mspace><mstyle mathcolor="red"><mstyle mathsize="0.8em"><mtext mathvariant="monospace">包含但不限于制作病毒，抄袭。</mtext></mstyle></mstyle></mstyle></mrow><annotation encoding="application/x-tex">\color{red}\texttt{\footnotesize{警告：切勿将本文章任何内容用于任何非法用途。}}
