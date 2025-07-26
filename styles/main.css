@@ -1839,11 +1839,11 @@ code::-webkit-scrollbar-thumb:hover {
         }
         
         .gt-bg-accent-color-first {
-          background: #364fc7!important;
+          background: #339af0!important;
         }
         
         .gt-bg-accent-color-second {
-          background: RGBA(54,79,199,0.2)!important;
+          background: RGBA(51,154,240,0.2)!important;
         }
         
         .gt-c-theme-color-first {
@@ -1863,11 +1863,11 @@ code::-webkit-scrollbar-thumb:hover {
         }
         
         .gt-c-accent-color-first {
-          color: #364fc7!important;
+          color: #339af0!important;
         }
         
         .gt-c-accent-color-second {
-          color: RGBA(54,79,199,0.2)!important;
+          color: RGBA(51,154,240,0.2)!important;
         }
         
         body {
@@ -1875,40 +1875,40 @@ code::-webkit-scrollbar-thumb:hover {
         }
         
         a {
-          color: #364fc7!important;
+          color: #339af0!important;
         }
         
         .post-content h1 {
           display: inline-block;
           color: #f8f9fa!important;
           position: relative!important;
-          background: linear-gradient(180deg, transparent 75%, RGBA(54,79,199,0.4) 0)!important;
+          background: linear-gradient(180deg, transparent 75%, RGBA(51,154,240,0.4) 0)!important;
         }
         
         .post-content h2 {
           display: inline-block;
           color: #f8f9fa!important;
           position: relative!important;
-          background: linear-gradient(180deg, transparent 75%, RGBA(54,79,199,0.4) 0)!important;
+          background: linear-gradient(180deg, transparent 75%, RGBA(51,154,240,0.4) 0)!important;
         }
         
         .gt-a-link {
           color: #f8f9fa!important;
           position: relative!important;
-          background: linear-gradient(180deg, transparent 75%, RGBA(54,79,199,0.4) 0)!important;
+          background: linear-gradient(180deg, transparent 75%, RGBA(51,154,240,0.4) 0)!important;
         }
         
         .gt-post-content a {
-          color: #364fc7!important;
+          color: #339af0!important;
         }
         
         .gt-post-content blockquote {
-          background: RGBA(54,79,199,0.2)!important;
-          border-color: #364fc7!important;
+          background: RGBA(51,154,240,0.2)!important;
+          border-color: #339af0!important;
         }
         
         .gt-post-content code {
-          background: RGBA(54,79,199,0.2)!important;
+          background: RGBA(51,154,240,0.2)!important;
         }
         
         input::placeholder {
